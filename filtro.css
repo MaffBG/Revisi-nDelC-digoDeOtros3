@@ -1,0 +1,48 @@
+/* *Estilo para el campo de texto */
+input {
+  width: 500px;
+  height: 40px;
+  font-size: 18px;
+}
+
+/* *Contenedor de la lista de productos */
+#lista-de-productos {
+  display: flex; /* Alinea los productos en una fila flexible */
+  flex-wrap: wrap; /* Permite que los productos bajen a nuevas filas si es necesario */
+  gap: 20px; /* Espaciado entre los productos */
+}
+
+/* *Estilo para cada producto (aplicado desde JavaScript) */
+.producto {
+  width: 200px; /* Tamaño fijo para consistencia */
+  height: 200px;
+  margin: 10px;
+  border: 2px solid black; /* Añade un borde visible */
+  display: flex; /* Usa flexbox para centrar el contenido */
+  flex-direction: column; /* Coloca título e imagen en columnas */
+  align-items: center; /* Centra el contenido horizontalmente */
+  padding: 10px; /* Espacio interno del contenedor */
+  justify-content: center; /* Centra verticalmente el contenido */
+  transition: transform 0.3s ease; /* Efecto suave para hover */
+}
+
+/* *Efecto al pasar el mouse sobre el producto */
+.producto:hover {
+  transform: scale(1.1); /* Amplía ligeramente el producto */
+  border-color: #007BFF; /* Cambia el color del borde */
+}
+
+/* *Estilo para la imagen dentro de cada producto */
+.producto img {
+  width: 70%; /* La imagen ocupa el 70% del ancho del contenedor */
+  height: auto; /* Mantiene las proporciones de la imagen */
+  border-radius: 8px; /* Bordes ligeramente redondeados */
+}
+
+/* *Estilo para el texto del título en cada producto */
+.producto .titulo {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center; /* Centra el texto */
+}
